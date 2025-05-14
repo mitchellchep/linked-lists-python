@@ -1,0 +1,15 @@
+#creation of singly linked list
+from symtable import class
+
+class SinglyLinkedList:
+    def __init__(self, value, nextNode = None):
+        self.value = value
+        self.nextNode = nextNode
+
+snode1 = SinglyLinkedList("1")
+snode2 = SinglyLinkedList("2")
+snode3 = SinglyLinkedList("3")
+snode4 = SinglyLinkedList("4")
+
+snode1.nextNode = snode2
+snode2.nextNode = snode3
