@@ -1,5 +1,6 @@
 #creation of singly linked list
-from symtable import class
+from operator import truediv
+from symtable import Class
 
 class SinglyLinkedList:
     def __init__(self, value, nextNode = None):
@@ -13,3 +14,12 @@ snode4 = SinglyLinkedList("4")
 
 snode1.nextNode = snode2
 snode2.nextNode = snode3
+
+currentNode = snode1
+while True:
+    print(currentNode.value, ">>>", end='')
+
+    if currentNode.nextNode is None:
+        print("None")
+        break
+    currentNode = currentNode.nextNode
