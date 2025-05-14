@@ -2,7 +2,7 @@
 from operator import truediv
 from symtable import Class
 
-class SinglyLinkedList:
+class SinglyLinkedList: #Lightweight, nonpublic class for storing a singly linked node
     def __init__(self, value, nextNode = None):
         self.value = value
         self.nextNode = nextNode
@@ -17,7 +17,7 @@ snode2.nextNode = snode3
 
 currentNode = snode1
 while True:
-    print(currentNode.value, ">>>", end='')
+    print(currentNode.value, ">>>", end=' ')
 
     if currentNode.nextNode is None:
         print("None")
